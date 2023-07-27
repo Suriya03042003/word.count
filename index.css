@@ -15,11 +15,11 @@ h1{
     color:#ffeba7;
     letter-spacing: 1px;
 }
-input{
+#input{
     border-radius: 5px;
     border: 2px solid black ;
-    margin-top:30px;
-    height:2em;
+    margin-top:20px;
+    height:18em;
     width:250px;
     padding-left:10px;
 }
@@ -30,7 +30,8 @@ input:active{
 #wrapper{
     height:500px;
     width:400px;
-    margin:200px auto;
+    margin:50px auto;
+    position: relative;
     background-color:#1f2029;
     border-radius:10px;
     text-align: center;
