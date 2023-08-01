@@ -10,26 +10,18 @@
 <body>
     <p>Educational Qualification</p>
     <div>
-        <input type="radio" id="EQ" value="Illiterate">
-        <label for="EQ">Illiterate</label>
+        <input type="radio" name="qualify" id="Illiterate" value="Illiterate" onclick="convert()">
+        <label for="Illiterate">Illiterate</label> <br>
+        <input type="radio" name="qualify" id="Diploma" value="Diploma" onclick="convert()">
+        <label for="Diploma">Diploma</label><br>
+        <input type="radio" name="qualify" id="Under Graduate" value="Under Graduate" onclick="convert()">
+        <label for="Under Graduate">Under Graduate</label><br>
+        <input type="radio" name="qualify" id="Post Graduate" value="Post Graduate" onclick="convert()" >
+        <label for="Post Graduate">Post Graduate</label><br>
+        <input type="radio" name="qualify" id="Doctrate" value="Doctrate" onclick="convert()">
+        <label for="Doctrate">Doctrate</label><br>
     </div>
-    <div>
-        <input type="radio" id="EQ" value="Diploma">
-        <label for="EQ">Diploma</label>
-    </div>
-    <div>
-        <input type="radio" id="EQ" value="Under Graduate">
-        <label for="EQ">Under Graduate</label>
-    </div>
-    <div>
-        <input type="radio" id="EQ" value="Post Graduate">
-        <label for="EQ">Post Graduate</label>
-    </div>
-    <div>
-        <input type="radio" id="EQ" value="Doctrate">
-        <label for="EQ">Doctrate</label>
-    </div>
-    <button type="submit">Submit</button>
-    <p id="output"></p>
+        <p id="output"></p>
+       
 </body>
 </html>
