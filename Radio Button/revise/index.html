@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>what is your name</p>
+   <div>
+   <input type="radio" id="suriya" name="peru" value="suriya" onclick="convert()">
+   <label for="suriya">suriya</label>
+   <input type="radio" id="yamuna" name="peru" value="yamuna" onclick="convert()">
+   <label for="suriya">yamuna</label>
+   <input type="radio" id="vicky" name="peru" value="vicky" onclick="convert()">
+   <label for="vicky">vicky</label>
+   <input type="radio" id="mowlish" name="peru" value="mowlish" onclick="convert()">
+   <label for="mowlish">mowlish</label>
+   </div>
+   <p id="reply"></p>
+
+   <script>
+    function convert(){
+    const peru = document.querySelectorAll("input[name='peru']");
+    for(const button of peru){
+        button.addEventListener('change',()=>{
+             const sollu = button.value;
+             document.getElementById('reply').innerHTML = `Hi ${sollu} Welcome to my Website`;
+        })
+    }
+   
+}
+   </script>
+</body>
+</html>
