@@ -1,0 +1,30 @@
+import Garage from './Garage'
+
+function Car(){
+    const isdooropen = false;
+    const fruits = [
+        {name:"apple",colour:"red"},
+        {name:"Banana",colour:"yellow"},
+        {name:"cucumber",colour:"Green"},
+        {name:"Dragon fruit",colour:"Pink"},        
+    ];
+
+    const numbers = [1,2,3,4,5,6,6,7,7,8,8,9,0];
+    //const fruits = {};
+    //const showInfo = (fruits.name !== undefined && fruits.colour !== undefined);
+   
+    return(
+           <> 
+            <h1>hello</h1>
+            <ol>{ fruits.map((fruit) =>  <li key={fruit.name}><Garage fruits={fruit}/> </li>) }</ol>
+             {isdooropen ? <h1>door is opened</h1> : <h1>door is closed</h1>}
+             <ol>
+               { numbers.map((number,e) => <li key={e}>{number}</li>) }
+            </ol>
+
+            </>
+    )
+}
+    
+
+export default Car;
