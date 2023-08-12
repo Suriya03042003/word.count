@@ -1,0 +1,36 @@
+import React from "react";
+import Styling from "./Styling";
+
+function Garage(props){
+
+    // const {brand} = props;
+    // const {color} = props;
+    // const text = `hi im a ${color} ${brand} car`;
+    const {fruits} = props;
+    const {name,colour} = fruits;
+    const figures = [{carname :"audi",price:54545},{carname :"BMW",price:46878},{carname :"Mercedes",price:148466}];
+    return(
+        <>
+            <h1>Hello, This is {name} and im {colour} in colour</h1>
+           { figures.map((figure)=> <Styling figures = {figure}/>) }
+       </>
+    )
+}
+
+export default Garage;
+
+/**************/Styling Component/**************/
+
+function Styling(props){
+  
+    const {figures} = props;
+    const {carname,price} = figures;
+return (
+    <>
+        <h1 style={{color:"red", fontFamily:"cursive"}}>This is {carname} and it costs of rupees {price} </h1>
+    </>
+)
+}
+
+export default Styling;
+
