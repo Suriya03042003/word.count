@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="script.js"></script> -->
+    <title>Profile IMG</title>
+</head>
+<body>
+    <h2>Updating Profile Image</h2>
+    <div id="wrapper">
+        <h1>Profile Viewer</h1>
+        <div>
+            <img src="profile.png">
+        </div>
+        <div>
+            <input type="file" class="box"></button>
+        </div>
+        <div id="result"> 
+       </div>
+    </div>
+    <h2>My Basic JavaScript Learning Project</h2>
+    <script>
+        const pic = document.querySelector("img");
+        const inputfile = document.querySelector("input");
 
+        inputfile.addEventListener('change', ()=>{
+        pic.src = URL.createObjectURL(inputfile.files[0]);
+                })
+    </script>
+</body>
+</html>
