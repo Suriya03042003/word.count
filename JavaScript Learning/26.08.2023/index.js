@@ -44,8 +44,45 @@ console.log(cost.reduce((total,a)=> a+total));
 array = [
     ['a','b','c'],
     ['d','e','a'],
-    ['b','f','g'],
+    ['b','f','a'],
 
 ];
 
 console.log(array.flat());
+
+let count = array.flat().reduce((accumlator,ele)=>
+{
+    if(accumlator[ele]) 
+        accumlator[ele]++
+    else 
+     accumlator[ele] = 1
+
+    return accumlator; 
+},{})
+
+console.log(count);
+
+
+const Str = "Robert Andrew George";
+let co = Str.split(' ')
+console.log(co.map((ele)=> 
+{
+    if(ele == 't')
+    return ele;
+        
+}
+))
+
+/*
+
+const ar = [4,6,2,3,1,1,3,5,7,1,8,4,3]
+
+let cou = ar.reduce((prev,curr)=>
+{
+if(prev[curr] )
+
+return prev;
+},[])
+
+console.log(cou);
+*/
